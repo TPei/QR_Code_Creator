@@ -2,6 +2,7 @@ QR_Code_Creator
 ===============
 
 Creates and downloads a qr code to a given URL
+
 Copyright (C) 2013  dragon5689
 
 This program is free software: you can redistribute it and/or modify
