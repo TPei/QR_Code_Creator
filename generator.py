@@ -1,3 +1,8 @@
+# import url opener
+from urllib2 import urlopen 
+import urllib2
+import tkFileDialog
+
 def qr_downloader(url_path, file_path):
 	""" Downloads a QR Code targeted at a certain URL and downloads it to a given directory using Google's chart API"""
 	try:
@@ -41,8 +46,9 @@ def qr_downloader(url_path, file_path):
 	except BaseException:
 		# all other exceptions
 		return "Unbekannter Fehler"
-	
-root = Tk()
-root.wm_title('QR Code Generator')
-app = App(root)
-root.mainloop()
+
+if __name__ == '__main__':
+	root = Tk()
+	root.wm_title('QR Code Generator')
+	app = App(root)
+	root.mainloop()
